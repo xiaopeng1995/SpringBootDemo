@@ -1,0 +1,22 @@
+apply plugin: 'spring-boot'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.0.RELEASE")
+    }
+}
+
+dependencies {
+
+
+    // freemarker
+    compile 'org.freemarker:freemarker:2.3.20'
+    compile 'org.springframework:spring-context-support:4.0.7.RELEASE'
+    compile 'org.springframework:spring-tx:4.0.7.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:1.4.0.RELEASE'
+
+}
